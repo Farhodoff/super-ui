@@ -35,7 +35,7 @@
     "docs:api": "tsx scripts/generate-api-docs.ts",
     "sync:cli": "node scripts/sync-cli-templates.cjs",
     "release": "changeset publish",
-    "chromatic": "npx chromatic --project-token=chpt_5041f714f995e13 --storybook-build-dir=storybook-static --auto-accept-changes --exit-zero-on-changes"
+    "chromatic": "npx chromatic --storybook-build-dir=storybook-static --auto-accept-changes --exit-zero-on-changes"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
