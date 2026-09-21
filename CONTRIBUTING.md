@@ -24,7 +24,7 @@ By participating in this project, you are expected to uphold our inclusive, resp
 ## How Can I Contribute?
 
 ### Reporting Bugs
-If you find a bug, please check the [Issue Tracker](https://github.com/Farhodoff/components-main/issues) first to see if it has already been reported. If not, open a new issue. Include:
+If you find a bug, please check the [Issue Tracker](https://github.com/Farhodoff/super-ui/issues) first to see if it has already been reported. If not, open a new issue. Include:
 - A clear, descriptive title.
 - Steps to reproduce the behavior.
 - Expected vs. actual behavior.
@@ -55,8 +55,8 @@ We use a feature branch workflow.
 2. Ensure you have `Node.js 18+` and `pnpm` installed.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/components-main.git
-cd components-main
+git clone https://github.com/YOUR_USERNAME/super-ui.git
+cd super-ui
 pnpm install
 ```
 

@@ -107,7 +107,7 @@ export const Header: React.FC = () => {
           <LanguageSwitcher />
 
           <Button variant="ghost" size="icon" asChild aria-label={t("nav.github")}>
-            <a href="https://github.com/Farhodoff/components-main" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Farhodoff/super-ui" target="_blank" rel="noopener noreferrer">
               <Github className="h-4 w-4" />
             </a>
           </Button>

@@ -206,7 +206,7 @@ export const AccordionDocs: React.FC = () => {
               <AccordionItem value="faq-2">
                 <AccordionTrigger>Where can I report bugs or submit feature requests?</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  Open an issue or pull request on our GitHub repository: <a href="https://github.com/Farhodoff/components-main" target="_blank" rel="noreferrer" className="text-primary hover:underline">Farhodoff/components-main</a>.
+                  Open an issue or pull request on our GitHub repository: <a href="https://github.com/Farhodoff/super-ui" target="_blank" rel="noreferrer" className="text-primary hover:underline">Farhodoff/super-ui</a>.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

@@ -50,6 +50,6 @@ Before you begin, ensure you have:
 
 ## Community & Support
 
-- 💬 [GitHub Discussions](https://github.com/YOUR_USERNAME/components-main/discussions) - Ask questions and share ideas
-- 🐛 [Issue Tracker](https://github.com/YOUR_USERNAME/components-main/issues) - Report bugs and request features
-- 📖 [Storybook](https://YOUR_USERNAME.github.io/components-main/storybook/) - Interactive component playground
+- 💬 [GitHub Discussions](https://github.com/Farhodoff/super-ui/discussions) - Ask questions and share ideas
+- 🐛 [Issue Tracker](https://github.com/Farhodoff/super-ui/issues) - Report bugs and request features
+- 📖 [Storybook](https://Farhodoff.github.io/super-ui/) - Interactive component playground

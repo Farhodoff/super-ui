@@ -7,7 +7,7 @@ export const InstallationDocs: React.FC = () => (
         <div>
             <h1 className="text-3xl font-bold mb-4">Installation</h1>
             <p className="text-lg text-muted-foreground">
-                Follow these steps to set up and run the ComponentLib project locally.
+                Follow these steps to set up and run the Super UI project locally.
             </p>
         </div>
 
@@ -25,8 +25,8 @@ export const InstallationDocs: React.FC = () => (
         <section className="space-y-4">
             <h2 className="text-2xl font-semibold">2. Clone the Repository</h2>
             <div className="bg-muted rounded-lg border p-4 font-mono text-sm">
-                <pre>git clone https://github.com/Farhodoff/components-main.git
-                    cd components-main</pre>
+                <pre>git clone https://github.com/Farhodoff/super-ui.git
+                    cd super-ui</pre>
             </div>
         </section>
 

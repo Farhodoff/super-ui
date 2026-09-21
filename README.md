@@ -33,8 +33,8 @@
 ![Recharts](https://img.shields.io/badge/Recharts-22B5BF?style=for-the-badge&logo=recharts&logoColor=white)
 # @farhod_dev/super-ui (Super UI Components)
 
-[![CI](https://github.com/Farhodoff/components-main/workflows/CI/badge.svg)](https://github.com/Farhodoff/components-main/actions)
-[![Storybook](https://github.com/Farhodoff/components-main/workflows/Deploy%20Storybook/badge.svg)](https://Farhodoff.github.io/components-main/)
+[![CI](https://github.com/Farhodoff/super-ui/workflows/CI/badge.svg)](https://github.com/Farhodoff/super-ui/actions)
+[![Storybook](https://github.com/Farhodoff/super-ui/workflows/Deploy%20Storybook/badge.svg)](https://Farhodoff.github.io/super-ui/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3-blue)](https://reactjs.org/)
@@ -72,15 +72,13 @@ npm install @farhod_dev/super-ui
 pnpm add @farhod_dev/super-ui
 ```
 
-*Note: The GitHub repository is named `components-main` but the published package is `@farhod_dev/super-ui`.*
-
 #### For Local Development
 
 Clone this repository and install dependencies:
 
 ```bash
-git clone https://github.com/Farhodoff/components-main.git
-cd components-main
+git clone https://github.com/Farhodoff/super-ui.git
+cd super-ui
 pnpm install
 ```
 

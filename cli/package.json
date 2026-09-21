@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Farhodoff/components-main.git",
+        "url": "https://github.com/Farhodoff/super-ui.git",
         "directory": "cli"
     },
     "license": "MIT",

@@ -33,3 +33,5 @@ docs/.vitepress/cache
 *.njsproj
 *.sln
 *.sw?
+.vercel
+.env*

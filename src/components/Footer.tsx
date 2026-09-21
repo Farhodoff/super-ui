@@ -24,17 +24,17 @@ export const Footer: React.FC = () => {
             <a href="/#components" className="hover:text-foreground transition-colors">
               {t("footer.components")}
             </a>
-            <a href="https://Farhodoff.github.io/components-main/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+            <a href="https://Farhodoff.github.io/super-ui/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
               {t("footer.storybook")}
             </a>
-            <a href="https://github.com/Farhodoff/components-main" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+            <a href="https://github.com/Farhodoff/super-ui" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
               {t("footer.github")}
             </a>
           </div>
 
           <div className="flex items-center gap-2">
             <Button variant="ghost" size="icon" aria-label="GitHub" asChild>
-              <a href="https://github.com/Farhodoff/components-main" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Farhodoff/super-ui" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4" />
               </a>
             </Button>

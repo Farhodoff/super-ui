@@ -4,7 +4,7 @@ export const ThemingDocs: React.FC = () => (
     <div className="space-y-8 max-w-4xl">
         <div>
             <h1 className="text-3xl font-bold mb-4">Theming</h1>
-            <p className="text-lg text-muted-foreground">Customize ComponentLib to match your brand identity.</p>
+            <p className="text-lg text-muted-foreground">Customize Super UI to match your brand identity.</p>
         </div>
 
         <section className="space-y-4">

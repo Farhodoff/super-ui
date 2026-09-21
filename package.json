@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Farhodoff/components-main.git"
+    "url": "https://github.com/Farhodoff/super-ui.git"
   },
-  "homepage": "https://Farhodoff.github.io/components-main/",
+  "homepage": "https://super-ui-components.vercel.app",
   "bugs": {
-    "url": "https://github.com/Farhodoff/components-main/issues"
+    "url": "https://github.com/Farhodoff/super-ui/issues"
   },
   "scripts": {
     "dev": "vite",

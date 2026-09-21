@@ -33,7 +33,7 @@ export const DocsIntroduction: React.FC = () => {
           <LibraryBadge variant="success">v1.0.0</LibraryBadge>
         </div>
         <p className="text-lg text-muted-foreground">
-          ComponentLib is a comprehensive, accessible React component library
+          Super UI is a comprehensive, accessible React component library
           built with TypeScript and Tailwind CSS. Every component is designed
           with accessibility in mind and follows WCAG 2.1 AA standards.
         </p>
@@ -143,7 +143,7 @@ export const DocsIntroduction: React.FC = () => {
       <section>
         <h2 className="text-xl font-semibold mb-4">Browser Support</h2>
         <p className="text-muted-foreground">
-          ComponentLib supports all modern browsers including Chrome, Firefox,
+          Super UI supports all modern browsers including Chrome, Firefox,
           Safari, and Edge. We recommend using the latest version of your
           preferred browser for the best experience.
         </p>

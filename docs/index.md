@@ -14,7 +14,7 @@ hero:
       link: /guide/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/YOUR_USERNAME/components-main
+      link: https://github.com/Farhodoff/super-ui
     - theme: alt
       text: View Components
       link: /components/

@@ -41,7 +41,7 @@ export default defineConfig({
             {
                 text: 'v0.0.3',
                 items: [
-                    { text: 'Changelog', link: 'https://github.com/Farhodoff/components-main/releases' },
+                    { text: 'Changelog', link: 'https://github.com/Farhodoff/super-ui/releases' },
                     { text: 'Contributing', link: '/guide/contributing' }
                 ]
             }
@@ -147,7 +147,7 @@ export default defineConfig({
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/Farhodoff' },
+            { icon: 'github', link: 'https://github.com/Farhodoff/super-ui' },
             { icon: 'npm', link: 'https://www.npmjs.com/package/@farhod_dev/super-ui' }
         ],
 
@@ -161,7 +161,7 @@ export default defineConfig({
         },
 
         editLink: {
-            pattern: 'https://github.com/Farhodoff/components-main/edit/main/docs/:path',
+            pattern: 'https://github.com/Farhodoff/super-ui/edit/main/docs/:path',
             text: 'Edit this page on GitHub'
         },
 

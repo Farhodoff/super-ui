@@ -46,7 +46,7 @@ git add .
 git commit -m "feat: initial commit with CI/CD pipeline"
 
 # Create repository on GitHub, then:
-git remote add origin https://github.com/YOUR_USERNAME/components-main.git
+git remote add origin https://github.com/Farhodoff/super-ui.git
 git branch -M main
 git push -u origin main
 ```

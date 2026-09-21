@@ -119,8 +119,8 @@ Run `npx super-ui list` to see all 10 components.
 
 ```bash
 # Clone repo
-git clone https://github.com/YOUR_USERNAME/components-main.git
-cd components-main/cli
+git clone https://github.com/Farhodoff/super-ui.git
+cd super-ui/cli
 
 # Install dependencies
 pnpm install
