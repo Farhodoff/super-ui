@@ -53,3 +53,15 @@ This component extends standard HTML attributes for its element type. No specifi
 ### Checkbox Props
 
 This component extends standard HTML attributes for its element type. No specific custom props are defined in a named interface.
+
+## API Reference
+
+### Checkbox Props
+
+This component extends standard HTML attributes for its element type. No specific custom props are defined in a named interface.
+
+## API Reference
+
+### Checkbox Props
+
+This component extends standard HTML attributes for its element type. No specific custom props are defined in a named interface.

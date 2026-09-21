@@ -37,6 +37,15 @@ import { ToastDocs } from "@/components/docs/ToastDocs";
 import { AvatarDocs } from "@/components/docs/AvatarDocs";
 import { SkeletonDocs } from "@/components/docs/SkeletonDocs";
 import { ProgressDocs } from "@/components/docs/ProgressDocs";
+import { AlertDialogDocs } from "@/components/docs/AlertDialogDocs";
+import { SheetDocs } from "@/components/docs/SheetDocs";
+import { RadioGroupDocs } from "@/components/docs/RadioGroupDocs";
+import { PaginationDocs } from "@/components/docs/PaginationDocs";
+import { CollapsibleDocs } from "@/components/docs/CollapsibleDocs";
+import { SeparatorDocs } from "@/components/docs/SeparatorDocs";
+import { ToggleDocs } from "@/components/docs/ToggleDocs";
+import { AspectRatioDocs } from "@/components/docs/AspectRatioDocs";
+import { TableDocs } from "@/components/docs/TableDocs";
 
 const componentMap: Record<string, React.FC> = {
   tabs: TabsDocs,
@@ -54,12 +63,21 @@ const componentMap: Record<string, React.FC> = {
   skeleton: SkeletonDocs,
   progress: ProgressDocs,
   alert: AlertDocs,
+  "alert-dialog": AlertDialogDocs,
   card: CardDocs,
   dialog: DialogDocs,
+  sheet: SheetDocs,
   tooltip: TooltipDocs,
   popover: PopoverDocs,
   toast: ToastDocs,
   sonner: ToastDocs,
+  "radio-group": RadioGroupDocs,
+  pagination: PaginationDocs,
+  collapsible: CollapsibleDocs,
+  separator: SeparatorDocs,
+  toggle: ToggleDocs,
+  "aspect-ratio": AspectRatioDocs,
+  table: TableDocs,
   kanban: KanbanDocs,
   charts: ChartsDocs,
   auth: AuthDocs,

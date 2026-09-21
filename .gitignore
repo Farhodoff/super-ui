@@ -9,7 +9,13 @@ lerna-debug.log*
 
 node_modules
 dist
+dist-app
 dist-ssr
+storybook-static
+playwright-report
+test-results
+docs/.vitepress/dist
+docs/.vitepress/cache
 *.local
 
 # Environment variables

@@ -193,3 +193,21 @@ function LoadingButton() {
 |------|------|---------|-------------|
 | `asChild` | `boolean \| undefined` | - | - |
 
+
+## API Reference
+
+### Button Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `asChild` | `boolean \| undefined` | - | - |
+
+
+## API Reference
+
+### Button Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `asChild` | `boolean \| undefined` | - | - |
+

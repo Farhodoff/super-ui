@@ -24,7 +24,19 @@ const componentDocsMap: Record<string, string> = {
     Card: "card.md",
     Badge: "badge.md",
     Alert: "alert.md",
-    // Add other mappings as needed
+    Tabs: "tabs.md",
+    Accordion: "accordion.md",
+    Switch: "switch.md",
+    Slider: "slider.md",
+    RadioGroup: "radio-group.md",
+    Sheet: "sheet.md",
+    AlertDialog: "alert-dialog.md",
+    Breadcrumb: "breadcrumb.md",
+    Pagination: "pagination.md",
+    Collapsible: "collapsible.md",
+    Separator: "separator.md",
+    Toggle: "toggle.md",
+    AspectRatio: "aspect-ratio.md",
 };
 
 function generateApiTable(componentName: string, filePath: string): string | null {
@@ -81,10 +93,14 @@ function generateApiTable(componentName: string, filePath: string): string | nul
 console.log("Generating API docs...");
 
 Object.entries(componentDocsMap).forEach(([componentName, docFileName]) => {
-    const componentPath = path.join(componentsDir, "ui", `${componentName.toLowerCase()}.tsx`);
+    const kebabName = componentName.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
+    let resolvedPath = path.join(componentsDir, "ui", `${kebabName}.tsx`);
+
+    if (!fs.existsSync(resolvedPath)) {
+        resolvedPath = path.join(componentsDir, "ui", `${componentName.toLowerCase()}.tsx`);
+    }
 
     // Also check library folder if not in ui
-    let resolvedPath = componentPath;
     if (!fs.existsSync(resolvedPath)) {
         resolvedPath = path.join(componentsDir, "library", `${componentName}.tsx`);
     }

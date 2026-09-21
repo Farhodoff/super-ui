@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-// @ts-expect-error - Alias not resolved in template context
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(

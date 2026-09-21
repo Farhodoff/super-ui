@@ -74,3 +74,19 @@ import { Badge } from '@/components/ui/badge'
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 
+
+## API Reference
+
+### Badge Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+
+
+## API Reference
+
+### Badge Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+

@@ -67,3 +67,15 @@ This component extends standard HTML attributes for its element type. No specifi
 ### Alert Props
 
 This component extends standard HTML attributes for its element type. No specific custom props are defined in a named interface.
+
+## API Reference
+
+### Alert Props
+
+This component extends standard HTML attributes for its element type. No specific custom props are defined in a named interface.
+
+## API Reference
+
+### Alert Props
+
+This component extends standard HTML attributes for its element type. No specific custom props are defined in a named interface.

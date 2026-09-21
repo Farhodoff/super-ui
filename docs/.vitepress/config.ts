@@ -39,7 +39,7 @@ export default defineConfig({
             { text: 'API Reference', link: '/api/' },
             { text: 'Examples', link: '/examples/' },
             {
-                text: 'v0.0.1',
+                text: 'v0.0.3',
                 items: [
                     { text: 'Changelog', link: 'https://github.com/Farhodoff/components-main/releases' },
                     { text: 'Contributing', link: '/guide/contributing' }
@@ -80,6 +80,19 @@ export default defineConfig({
                         { text: 'Input', link: '/components/input' },
                         { text: 'Checkbox', link: '/components/checkbox' },
                         { text: 'Select', link: '/components/select' },
+                        { text: 'Switch', link: '/components/switch' },
+                        { text: 'Slider', link: '/components/slider' },
+                        { text: 'Radio Group', link: '/components/radio-group' },
+                        { text: 'Toggle', link: '/components/toggle' },
+                    ]
+                },
+                {
+                    text: 'Navigation',
+                    items: [
+                        { text: 'Tabs', link: '/components/tabs' },
+                        { text: 'Accordion', link: '/components/accordion' },
+                        { text: 'Breadcrumb', link: '/components/breadcrumb' },
+                        { text: 'Pagination', link: '/components/pagination' },
                     ]
                 },
                 {
@@ -89,14 +102,24 @@ export default defineConfig({
                         { text: 'Badge', link: '/components/badge' },
                         { text: 'Alert', link: '/components/alert' },
                         { text: 'Table', link: '/components/table' },
+                        { text: 'Separator', link: '/components/separator' },
                     ]
                 },
                 {
-                    text: 'Feedback',
+                    text: 'Feedback & Overlay',
                     items: [
                         { text: 'Dialog', link: '/components/dialog' },
+                        { text: 'Alert Dialog', link: '/components/alert-dialog' },
+                        { text: 'Sheet', link: '/components/sheet' },
                         { text: 'Toast', link: '/components/toast' },
                         { text: 'Progress', link: '/components/progress' },
+                    ]
+                },
+                {
+                    text: 'Layout & Media',
+                    items: [
+                        { text: 'Collapsible', link: '/components/collapsible' },
+                        { text: 'Aspect Ratio', link: '/components/aspect-ratio' },
                     ]
                 }
             ],

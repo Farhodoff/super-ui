@@ -20,23 +20,32 @@ const componentItems = [
   { title: "Tabs", url: "/docs/tabs", category: "Navigation" },
   { title: "Accordion", url: "/docs/accordion", category: "Navigation" },
   { title: "Breadcrumb", url: "/docs/breadcrumb", category: "Navigation" },
+  { title: "Pagination", url: "/docs/pagination", category: "Navigation" },
   { title: "Button", url: "/docs/button", category: "Form" },
   { title: "Input", url: "/docs/input", category: "Form" },
   { title: "Textarea", url: "/docs/textarea", category: "Form" },
   { title: "Select", url: "/docs/select", category: "Form" },
   { title: "Checkbox", url: "/docs/checkbox", category: "Form" },
+  { title: "Radio Group", url: "/docs/radio-group", category: "Form" },
   { title: "Switch", url: "/docs/switch", category: "Form" },
   { title: "Slider", url: "/docs/slider", category: "Form" },
+  { title: "Toggle", url: "/docs/toggle", category: "Form" },
   { title: "Badge", url: "/docs/badge", category: "Display" },
   { title: "Avatar", url: "/docs/avatar", category: "Display" },
   { title: "Skeleton", url: "/docs/skeleton", category: "Display" },
   { title: "Progress", url: "/docs/progress", category: "Display" },
+  { title: "Separator", url: "/docs/separator", category: "Display" },
+  { title: "Table", url: "/docs/table", category: "Display" },
   { title: "Alert", url: "/docs/alert", category: "Feedback" },
+  { title: "Alert Dialog", url: "/docs/alert-dialog", category: "Feedback" },
   { title: "Dialog", url: "/docs/dialog", category: "Feedback" },
   { title: "Tooltip", url: "/docs/tooltip", category: "Feedback" },
   { title: "Popover", url: "/docs/popover", category: "Feedback" },
   { title: "Toast", url: "/docs/toast", category: "Feedback" },
+  { title: "Sheet", url: "/docs/sheet", category: "Overlay" },
   { title: "Card", url: "/docs/card", category: "Layout" },
+  { title: "Collapsible", url: "/docs/collapsible", category: "Layout" },
+  { title: "Aspect Ratio", url: "/docs/aspect-ratio", category: "Layout" },
   { title: "Combobox", url: "/docs/combobox", category: "Library" },
   { title: "DatePicker", url: "/docs/datepicker", category: "Library" },
   { title: "FileUpload", url: "/docs/file-upload", category: "Library" },
@@ -65,9 +74,10 @@ export function DocsSidebar() {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredComponents = componentItems.filter((item) =>
-    t(`sidebar.items.${item.title}`).toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredComponents = componentItems.filter((item) => {
+    const localized = t(`sidebar.items.${item.title}`, item.title);
+    return localized.toLowerCase().includes(searchQuery.toLowerCase());
+  });
 
   const groupedComponents = filteredComponents.reduce((acc, item) => {
     if (!acc[item.category]) {
@@ -132,7 +142,7 @@ export function DocsSidebar() {
         {Object.entries(groupedComponents).map(([category, items]) => (
           <SidebarGroup key={category}>
             <SidebarGroupLabel className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-2">
-              {t(`sidebar.categories.${category}`)}
+              {t(`sidebar.categories.${category}`, category)}
             </SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
@@ -146,7 +156,7 @@ export function DocsSidebar() {
                         activeClassName="bg-primary/10 text-primary font-medium"
                       >
                         <ChevronRight className="h-3 w-3" />
-                        {!collapsed && <span>{t(`sidebar.items.${item.title}`)}</span>}
+                        {!collapsed && <span>{t(`sidebar.items.${item.title}`, item.title)}</span>}
                       </NavLink>
                     </SidebarMenuButton>
                   </SidebarMenuItem>

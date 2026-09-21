@@ -34,8 +34,8 @@ export async function addCommand(components: string[], options: CLIOptions) {
     logger.info(`Adding ${chalk.bold(components.length)} component(s)...`)
     console.log()
 
-    const targetDir = options.path || 'src/components/ui'
-    await ensureDir(path.join(cwd, targetDir))
+    const targetDir = path.resolve(cwd, options.path || 'src/components/ui')
+    await ensureDir(targetDir)
 
     // Collect all dependencies
     const allDeps = new Set<string>()
@@ -47,7 +47,7 @@ export async function addCommand(components: string[], options: CLIOptions) {
         try {
             // Check if component already exists
             for (const file of component.files) {
-                const targetPath = path.join(cwd, targetDir, file)
+                const targetPath = path.join(targetDir, file)
 
                 if (await fileExists(targetPath) && !options.overwrite) {
                     spinner.warn(chalk.yellow(`${componentName} already exists (use --overwrite to replace)`))
