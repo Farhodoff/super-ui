@@ -38,6 +38,7 @@ export default defineConfig({
             { text: 'Components', link: '/components/' },
             { text: 'API Reference', link: '/api/' },
             { text: 'Examples', link: '/examples/' },
+            { text: 'Storybook', link: 'https://super-ui-storybook.vercel.app' },
             {
                 text: 'v0.0.3',
                 items: [

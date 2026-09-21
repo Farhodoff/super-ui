@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
             <a href="/#components" className="hover:text-foreground transition-colors">
               {t("footer.components")}
             </a>
-            <a href="https://Farhodoff.github.io/super-ui/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+            <a href="https://super-ui-storybook.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
               {t("footer.storybook")}
             </a>
             <a href="https://github.com/Farhodoff/super-ui" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">

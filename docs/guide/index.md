@@ -52,4 +52,4 @@ Before you begin, ensure you have:
 
 - 💬 [GitHub Discussions](https://github.com/Farhodoff/super-ui/discussions) - Ask questions and share ideas
 - 🐛 [Issue Tracker](https://github.com/Farhodoff/super-ui/issues) - Report bugs and request features
-- 📖 [Storybook](https://Farhodoff.github.io/super-ui/) - Interactive component playground
+- 📖 [Storybook](https://super-ui-storybook.vercel.app) - Interactive component playground

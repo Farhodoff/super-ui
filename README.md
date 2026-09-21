@@ -34,7 +34,7 @@
 # @farhod_dev/super-ui (Super UI Components)
 
 [![CI](https://github.com/Farhodoff/super-ui/workflows/CI/badge.svg)](https://github.com/Farhodoff/super-ui/actions)
-[![Storybook](https://github.com/Farhodoff/super-ui/workflows/Deploy%20Storybook/badge.svg)](https://Farhodoff.github.io/super-ui/)
+[![Storybook](https://img.shields.io/badge/Storybook-Live-FF4785?style=flat&logo=storybook)](https://super-ui-storybook.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3-blue)](https://reactjs.org/)
