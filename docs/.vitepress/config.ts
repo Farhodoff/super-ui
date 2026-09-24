@@ -40,7 +40,7 @@ export default defineConfig({
             { text: 'Examples', link: '/examples/' },
             { text: 'Storybook', link: 'https://super-ui-storybook.vercel.app' },
             {
-                text: 'v0.0.3',
+                text: 'v0.1.0',
                 items: [
                     { text: 'Changelog', link: 'https://github.com/Farhodoff/super-ui/releases' },
                     { text: 'Contributing', link: '/guide/contributing' }

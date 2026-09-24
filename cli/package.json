@@ -1,6 +1,6 @@
 {
     "name": "@farhod_dev/super-ui-cli",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "description": "CLI tool for Super UI component library",
     "author": {
         "name": "Farhod Soyilov",
@@ -23,7 +23,7 @@
         "build": "tsup src/index.ts --format cjs --dts --clean",
         "dev": "tsup src/index.ts --format cjs --watch",
         "typecheck": "tsc --noEmit",
-        "prepublishOnly": "pnpm build"
+        "prepublishOnly": "npm run build"
     },
     "dependencies": {
         "commander": "^11.1.0",
