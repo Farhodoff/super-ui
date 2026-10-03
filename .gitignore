@@ -13,10 +13,20 @@ dist-app
 dist-ssr
 storybook-static
 playwright-report
+playwright-report/
 test-results
+test-results/
+coverage/
 docs/.vitepress/dist
 docs/.vitepress/cache
 *.local
+
+# Archive and pack files
+*.tgz
+*.tar.gz
+*.tar
+*.zip
+
 
 # Environment variables
 .env
