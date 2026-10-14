@@ -53,6 +53,84 @@ A comprehensive, production-ready React component library built with **Radix UI*
 - **Zero Database Coupling:** The core library handles UI only; database integrations are strictly relegated to optional example templates.
 - **Themeable:** Dynamic primary colors, border radii, and Dark/Light mode support.
 
+---
+
+## 🏛 System Architecture & Component Ecosystem
+
+**Super UI** combines headless primitives, design tokens, a code-distribution CLI, and interactive Storybook documentation into a unified developer experience:
+
+```mermaid
+flowchart TD
+    %% Styling and Theme Classes
+    classDef cli fill:#0F172A,stroke:#38BDF8,stroke-width:2px,color:#F8FAFC
+    classDef core fill:#1E293B,stroke:#818CF8,stroke-width:2px,color:#F8FAFC
+    classDef token fill:#312E81,stroke:#C084FC,stroke-width:2px,color:#F8FAFC
+    classDef doc fill:#064E3B,stroke:#34D399,stroke-width:2px,color:#F8FAFC
+    classDef app fill:#451A03,stroke:#FBBF24,stroke-width:2px,color:#F8FAFC
+
+    subgraph ConsumerApps["💻 Consumer Applications (Developers)"]
+        NextApp["⚡ Next.js / Vite / React Project"]:::app
+        SuperCLI["🛠️ Super UI CLI Tool<br/>(npx @farhod_dev/super-ui add)"]:::cli
+        ConfigJSON["⚙️ components.json<br/>(Path mappings, style configs)"]:::cli
+    end
+
+    subgraph CLIEngine["🚀 CLI Scaffolding Engine (cli/)"]
+        InitCmd["📦 init command<br/>(Tailwind preset, variables setup)"]:::cli
+        AddCmd["📥 add component command<br/>(AST / File injector, deps installer)"]:::cli
+        PkgDetector["🔍 Package Manager Detector<br/>(pnpm / npm / yarn / bun)"]:::cli
+    end
+
+    subgraph ComponentSystem["🧩 Component System & Architecture (src/)"]
+        Primitives["🧱 Radix UI Primitives<br/>(Dialog, Popover, Dropdown, Tabs)"]:::core
+        UIAtoms["⚛️ Core Components 50+<br/>(Button, Input, Card, Modal, Table)"]:::core
+        Templates["📊 Pre-built Templates<br/>(Auth flow, Dashboard, Metrics)"]:::core
+        HookLayer["🪝 Custom Hooks<br/>(useTheme, useMediaQuery, useToast)"]:::core
+    end
+
+    subgraph DesignTokens["🎨 Tokens, Themes & Accessibility"]
+        TailwindPreset["🖌️ Tailwind CSS Preset<br/>(tailwind.preset.js - HSL color tokens)"]:::token
+        ThemeCustomizer["🌓 Theme & Dark Mode Engine<br/>(CSS Variables, dynamic radii)"]:::token
+        I18nEngine["🌐 Central Asia i18n<br/>(Deep English & Uzbek localization)"]:::token
+        A11yLayer["♿ WCAG 2.1 AA Compliance<br/>(Keyboard nav, ARIA attributes, focus traps)"]:::token
+    end
+
+    subgraph QualityDocs["📚 Quality, Testing & Documentation"]
+        Storybook["📖 Storybook 8 Playground<br/>(Live documentation & component catalog)"]:::doc
+        TestEngine["🧪 Testing Engine<br/>(Vitest Unit + Playwright E2E a11y)"]:::doc
+        TsupBundler["📦 tsup Tree-Shakeable Bundler<br/>(ESM & CJS dual distribution)"]:::doc
+    end
+
+    %% Consumer and CLI Flow
+    SuperCLI --> InitCmd
+    SuperCLI --> AddCmd
+    InitCmd --> PkgDetector
+    AddCmd --> ConfigJSON
+    AddCmd -. "Injects code directly into" .-> NextApp
+
+    %% System Composition
+    Primitives --> UIAtoms
+    UIAtoms --> Templates
+    HookLayer --> UIAtoms
+
+    %% Design and i18n
+    TailwindPreset --> UIAtoms
+    ThemeCustomizer --> UIAtoms
+    I18nEngine --> UIAtoms
+    A11yLayer --> Primitives
+
+    %% Quality & Bundler
+    UIAtoms --> Storybook
+    UIAtoms --> TestEngine
+    UIAtoms --> TsupBundler
+    TsupBundler -. "npm install @farhod_dev/super-ui" .-> NextApp
+```
+
+### 🔄 Dual Distribution Model (CLI vs. NPM Package)
+- **CLI Workflow (Direct Source Ownership):** Using `npx @farhod_dev/super-ui add <component>`, components are copied directly into your project's `components/ui` directory, allowing full customization of the source code.
+- **NPM Package Workflow (Centralized Updates):** Install `@farhod_dev/super-ui` as a tree-shakeable dependency to receive centralized patches, upstream bug fixes, and pre-compiled primitives.
+
+---
+
 ## 🛠 Getting Started
 
 ### Prerequisites
