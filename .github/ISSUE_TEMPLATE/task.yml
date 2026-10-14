@@ -1,0 +1,35 @@
+name: "🛠️ Task / Component Maintenance"
+description: "New component primitive, token update, CLI enhancement, or Storybook docs task"
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What component, CLI command, or documentation needs work?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Package / Area
+      options:
+        - Core UI Components (src/components)
+        - Radix UI Headless Primitives
+        - Super UI CLI (@farhod_dev/super-ui)
+        - Tailwind Tokens & Theming
+        - Storybook 8 & Documentation
+        - Accessibility (WCAG 2.1 AA)
+        - Testing (Vitest / Playwright)
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Acceptance Criteria
+      value: |
+        - [ ] Implementation complete
+        - [ ] Unit & E2E tests passing
+        - [ ] Storybook story created / updated
+        - [ ] Types exported without errors (`pnpm build`)
